@@ -66,6 +66,13 @@ elif [ "$1" == "rpi" ]; then
     echo rpi > ../scripts/openplc_platform
     echo rpi > ../scripts/openplc_driver
 
+elif [ "$1" == "rpi_cm3" ]; then
+    echo "Activating Raspberry Pi CM3 driver"
+    cp ./hardware_layers/raspberrypi_cm3.cpp ./hardware_layer.cpp
+    echo "Setting Platform"
+    echo rpi > ../scripts/openplc_platform
+    echo rpi_cm3 > ../scripts/openplc_driver
+
 elif [ "$1" == "rpi_old" ]; then
     echo "Activating Raspberry Pi 2011 driver"
     cp ./hardware_layers/raspberrypi_old.cpp ./hardware_layer.cpp

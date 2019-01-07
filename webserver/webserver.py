@@ -1310,6 +1310,8 @@ def hardware():
             else: return_str += "<option value='pixtend_2l'>PiXtend 2l</option>"  
             if (current_driver == "rpi"): return_str += "<option selected='selected' value='rpi'>Raspberry Pi</option>"
             else: return_str += "<option value='rpi'>Raspberry Pi</option>"
+            if (current_driver == "rpi_cm3"): return_str += "<option selected='selected' value='rpi_cm3'>Raspberry Pi CM3</option>"
+            else: return_str += "<option value='rpi_cm3'>Raspberry Pi CM3</option>"
             if (current_driver == "rpi_old"): return_str += "<option selected='selected' value='rpi_old'>Raspberry Pi - Old Model (2011 model B)</option>"
             else: return_str += "<option value='rpi_old'>Raspberry Pi - Old Model (2011 model B)</option>"
             if (current_driver == "simulink"): return_str += "<option selected='selected' value='simulink'>Simulink</option>"
